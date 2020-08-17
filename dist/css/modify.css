@@ -1,6 +1,7 @@
 .active{
     color: #f79625;
     size: 200px;
+	padding:20px;
 }
 .telegramBox{
     color: white;
