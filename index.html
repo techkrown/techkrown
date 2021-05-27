@@ -50,6 +50,7 @@
 								//window.open("https://play.google.com/store/apps/details?id=find.teammate.matchbuddy","_self")
 								
 								window.ReactNativeWebView.postMessage('msg from the webview');
+								window.flutter_inappwebview.callHandler('testEvent', 'message from webview');
 								console.log("check");
 								return false;
 							}
