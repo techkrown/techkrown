@@ -49,7 +49,7 @@
 							{
 								//window.open("https://play.google.com/store/apps/details?id=find.teammate.matchbuddy","_self")
 								const args =  {"origin":"mirrar","function":"hideCloseBtn"};
-								window.ReactNativeWebView.postMessage(args);
+								window.ReactNativeWebView.postMessage('{"origin":"mirrar","function":"hideCloseBtn"}');
 								
 								window.flutter_inappwebview.callHandler('testFunc',args);
 								console.log("check12");
