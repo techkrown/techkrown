@@ -41,8 +41,20 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">Find your Pubg teammates on <font face="verdana"color="#f79625"> Matchbuddy</font> with just a swipe</h1>
 	                        <p class="hero-paragraph">Talent wins games, but teamwork and intelligence win championships</p>
-	                        <div class="hero-cta"><a class="button button-primary button-shadow" href="https://play.google.com/store/apps/details?id=find.teammate.matchbuddy">Download App from play store</a></div>
+	                        <div class="hero-cta"><a class="button button-primary button-shadow"  onclick='return check()'>Download App from play store</a></div>
 						</div>
+						<script type='text/javascript'>
+
+							function check()
+							{
+								//window.open("https://play.google.com/store/apps/details?id=find.teammate.matchbuddy","_self")
+								
+								window.ReactNativeWebView.postMessage('msg from the webview');
+								console.log("check");
+								return false;
+							}
+							
+							</script>
 						<div class="hero-app">
 							<div class="hero-app-illustration">
 								<svg width="999" height="931" xmlns="http://www.w3.org/2000/svg">
