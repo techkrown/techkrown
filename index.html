@@ -51,6 +51,7 @@
 								
 
 const message = "checkmessage";
+window.ReactNativeWebView.postMessage('msg from the webview');
 if (window.flutter_inappwebview.callHandler) {
 	console.log("inside if");
 
