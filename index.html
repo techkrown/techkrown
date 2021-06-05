@@ -59,7 +59,7 @@ if (window.flutter_inappwebview.callHandler) {
 } else {
 	console.log("inside else");
 
-   window.flutter_inappwebview._callHandler('handlerName', setTimeout(function(){}), JSON.stringify([message]));
+   window.flutter_inappwebview._callHandler('handlerName', setTimeout(function(){}), message);
 }
 								//window.ReactNativeWebView.postMessage('msg from the webview');
 								return false;
